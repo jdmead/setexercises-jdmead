@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsPage">
+
+    <TextView
+        android:id="@+id/MyTimeName"
+        android:layout_width="226dp"
+        android:layout_height="83dp"
+        android:layout_marginTop="48dp"
+        android:text="MyTime"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/NotificationsBOX"
+        android:layout_width="196dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="56dp"
+        android:text="Turn all notifications ON"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SettingsTXT" />
+
+    <CheckBox
+        android:id="@+id/EmailsBOX"
+        android:layout_width="194dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="88dp"
+        android:text="Only Receive important emails"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NotificationsBOX" />
+
+    <TextView
+        android:id="@+id/SettingsTXT"
+        android:layout_width="201dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="92dp"
+        android:text="Settings"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#4CAF50"
+        android:textSize="15sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MyTimeName" />
+
+    <ImageButton
+        android:id="@+id/ReturnBTN"
+        android:layout_width="125dp"
+        android:layout_height="109dp"
+        android:layout_marginTop="40dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EmailsBOX"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/return_img" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
