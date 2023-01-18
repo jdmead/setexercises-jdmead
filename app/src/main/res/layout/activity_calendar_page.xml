@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalendarPage">
+
+    <TextView
+        android:id="@+id/MyTimeName"
+        android:layout_width="226dp"
+        android:layout_height="83dp"
+        android:layout_marginTop="16dp"
+        android:text="MyTime"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/RtnBtn"
+        android:layout_width="107dp"
+        android:layout_height="97dp"
+        android:layout_marginTop="32dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.134"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MyTimeName"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/return_img" />
+
+    <TextView
+        android:id="@+id/NatHOLTXT"
+        android:layout_width="143dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="20dp"
+        android:text="National Holiday"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#4CAF50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.798"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MyTimeName" />
+
+    <TextView
+        android:id="@+id/BookedHOLTXT"
+        android:layout_width="143dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="8dp"
+        android:text="Booked Holiday"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#F32314"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.798"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NatHOLTXT" />
+
+    <TextView
+        android:id="@+id/OtherTXT"
+        android:layout_width="142dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="12dp"
+        android:autoText="false"
+        android:text="Other"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#3F51B5"
+        app:autoSizeTextType="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.795"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BookedHOLTXT"
+        app:layout_constraintVertical_bias="0.002" />
+
+    <CalendarView
+        android:id="@+id/Calendar"
+        android:layout_width="343dp"
+        android:layout_height="292dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.599" />
+
+    <Button
+        android:id="@+id/RqBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Request"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.836" />
+
+    <TextView
+        android:id="@+id/RemainingHOL"
+        android:layout_width="287dp"
+        android:layout_height="31dp"
+        android:text="You have 28 reamining holidays"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.904" />
+
+    <TextView
+        android:id="@+id/HOLUsed"
+        android:layout_width="286dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="16dp"
+        android:text="You have used 2 holidays this year"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RemainingHOL"
+        app:layout_constraintVertical_bias="0.283" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

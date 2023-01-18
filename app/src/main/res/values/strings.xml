@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">COMP2000-Software_Engineering_2</string>
+    <string-array name="IUD">
+        <item>Please choose an option</item>
+        <item>Insert</item>
+        <item>Update</item>
+        <item>Delete</item>
+    </string-array>
+</resources>
